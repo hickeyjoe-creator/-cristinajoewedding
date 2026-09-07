@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cristina &amp; Joe | Our Wedding</title>
+  <meta name="description" content="Join us as we celebrate the wedding of Cristina and Joe." />
+  <meta name="theme-color" content="#4b5d47" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">C &amp; J</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#details">Details</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#rsvp" class="nav-cta">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">We're getting married</p>
+        <h1 class="hero-names">Cristina <span class="amp">&amp;</span> Joe</h1>
+        <p class="hero-date" id="weddingDateText">Saturday, August 21, 2027</p>
+        <p class="hero-location">El Invernadero, Club de Tiro Madrid &middot; El Pardo, Madrid</p>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown-item"><span id="cd-days">00</span><label>Days</label></div>
+          <div class="countdown-item"><span id="cd-hours">00</span><label>Hours</label></div>
+          <div class="countdown-item"><span id="cd-mins">00</span><label>Minutes</label></div>
+          <div class="countdown-item"><span id="cd-secs">00</span><label>Seconds</label></div>
+        </div>
+        <a href="#rsvp" class="btn btn-primary">RSVP</a>
+      </div>
+    </section>
+
+    <!-- EVENT DETAILS -->
+    <section id="details" class="section details">
+      <h2 class="section-title">Wedding Details</h2>
+      <div class="details-grid">
+        <div class="detail-card">
+          <h3>Ceremony</h3>
+          <p class="detail-time">7:00 PM</p>
+          <p>Please arrive from 6:00 PM.<br />El Invernadero, Club de Tiro Madrid<br />Ctra. Madrid-El Pardo M-605, Km 1.2<br />28035 Madrid</p>
+        </div>
+        <div class="detail-card">
+          <h3>Reception</h3>
+          <p class="detail-time">Until 4:00 AM</p>
+          <p>El Invernadero, Club de Tiro Madrid<br />Ctra. Madrid-El Pardo M-605, Km 1.2<br />28035 Madrid</p>
+        </div>
+        <div class="detail-card">
+          <h3>Dress Code</h3>
+          <p class="detail-time">Dress for Spanish Summer</p>
+          <p>Linen shirts for the lads. Ladies, do your own thing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-subtitle">A few of our favorite moments.</p>
+      <div class="gallery-grid">
+        <div class="gallery-photo">
+          <img src="images/family-beach.jpg" alt="Cristina and Joe on the beach with family" loading="lazy" />
+        </div>
+        <div class="gallery-photo">
+          <img src="images/plaza-selfie.jpg" alt="Cristina and Joe in a Spanish plaza" loading="lazy" />
+        </div>
+        <div class="gallery-photo">
+          <img src="images/formal-portrait.jpg" alt="Cristina and Joe dressed up for an evening out" loading="lazy" />
+        </div>
+        <div class="gallery-photo">
+          <img src="images/golf-course.jpg" alt="Cristina and Joe in front of a castle" loading="lazy" />
+        </div>
+        <div class="gallery-photo">
+          <img src="images/family-parade.jpg" alt="Cristina and Joe with the kids at a St. Patrick's Day parade" loading="lazy" />
+        </div>
+        <div class="gallery-photo">
+          <img src="images/family-terrace.jpg" alt="Cristina and Joe with the kids on a terrace" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL & REGISTRY -->
+    <section id="travel" class="section travel">
+      <h2 class="section-title">Travel &amp; Accommodations</h2>
+      <div class="travel-grid">
+        <div class="travel-card">
+          <h3>Where to Stay</h3>
+          <p>
+            Hotel recommendations will follow. The venue is about 10 minutes
+            from Madrid city centre, so there are plenty of options to suit
+            any budget.
+          </p>
+        </div>
+        <div class="travel-card">
+          <h3>Getting There</h3>
+          <p>
+            Nearest airport: Adolfo Su&aacute;rez Madrid&ndash;Barajas (MAD), about 25 minutes away.
+            Club de Tiro Madrid is in the Monte de El Pardo, a few minutes from central Madrid.
+            On-site parking is available.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section rsvp">
+      <h2 class="section-title">RSVP</h2>
+      <p class="section-subtitle">Kindly respond by June 21, 2027.</p>
+
+      <form id="rsvpForm" class="rsvp-form" action="https://formspree.io/f/xbgjkplk" method="POST">
+        <div class="form-row">
+          <label for="fullName">Full Name(s)</label>
+          <input type="text" id="fullName" name="fullName" required placeholder="Your full name" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Will you be attending?</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="attending" value="yes" required /> Joyfully accepts</label>
+            <label><input type="radio" name="attending" value="no" required /> Regretfully declines</label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="guests">Number of Guests (including you)</label>
+          <select id="guests" name="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="dietary">Dietary Restrictions / Allergies</label>
+          <textarea id="dietary" name="dietary" rows="3" placeholder="Let us know of any allergies or dietary needs"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message for the Couple (optional)</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send RSVP</button>
+
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div id="rsvpSuccess" class="rsvp-success hidden" role="status">
+        <h3>Thank you!</h3>
+        <p>Your RSVP has been sent. We can't wait to celebrate with you.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Cristina &amp; Joe &middot; August 21, 2027</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
